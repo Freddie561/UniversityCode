@@ -1,0 +1,658 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-color: black;
+	font-family: MainFont;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+	transition: all 0.5s;
+}
+a:hover {
+	
+	border: none;
+	text-decoration: underline orangered;
+	
+}
+
+a:active {
+  background-color: black;
+  	border:none;
+	text-decoration: underline orangered;
+}
+
+
+@font-face{
+	font-family: MainFont;
+	src: url("../Assets/fonts/Harabara.ttf");
+}
+
+
+.container{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	color: black;
+	overflow: hidden;
+	min-height: 30%;
+	min-height: 30%;
+	
+}
+
+nav{
+	top:0;
+	padding-left:3%;
+	padding-right:3%;
+	text-align: right;
+	overflow: hidden;
+	
+	
+	
+}
+
+footer{
+	display: block;
+	background: #000000;
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;	
+	color: orangered;
+		
+}
+.footer img{
+	text-align: left;
+}
+
+
+.main-logo img{
+	
+	float:left;
+	height:10%;
+	width:200px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	
+}
+#logo:hover{
+	background-color: black;
+	overflow: hidden;
+}
+header{
+	
+	background-color: #000000;
+	background-bottom: 1px solid orange;
+	position: fixed; /* Set the navbar to fixed position */
+  	top: 0; /* Position the navbar at the top of the page */
+ 	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	left:0;
+	right:0;
+	z-index: 1;
+
+}
+
+
+.dropbtn{
+	background: none;
+	color: white;
+	border: none;	
+	float: right;
+	font-weight: bold;
+	font-size: 20px;
+	letter-spacing: 2px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+	font-family: MainFont;
+	
+}
+.dropbtn:hover {
+	background-color: black;
+	border: none;
+	text-decoration: underline orangered;
+	
+}
+
+.dropbtn:active {
+  background-color: black;
+  	border:none;
+	text-decoration: underline orangered;
+}
+
+.cart-content{
+	display:none;
+	position: absolute;
+	background color: pink;
+	border: thick white;
+	padding:12px 16px;
+	z-index: 1;
+}
+.dropbtn:hover .cart-content{
+	display:block;
+}
+
+
+.dropdown{
+	display: inline-block;
+	padding:16px;
+	
+}
+.dropdown a{
+	color:white;
+	padding:5px;
+	font-size: 20px;
+}
+
+.dropdown .search-container{
+	float: right;
+}
+
+
+
+
+
+.parallax{
+	background-image: url("../Assets/background.jpg");
+		min-height:600px;
+	background-attachment: fixed;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	
+	
+}
+.mensblock{
+	
+	height:551px;
+	font-size:36px;
+	background-color: #EAE9E5;
+	width: 100%;
+	min-width: 400px;
+	font-size: 4vw;
+	min-height: 551px;
+}
+.womensblock{
+	height:500px;
+	font-size: 36px;
+	background-color:#E7E6E2;
+	width: 100%;
+	
+}
+.parallax-womens{
+	background-image: url("../Assets/firstimage.jpg");
+		min-height:1000px;
+	background-attachment: fixed;
+		background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.parallax-newstock{
+	background-image: url("../Assets/hp2-knits-mens.jpg");
+		min-height:1000px;
+	background-attachment: fixed;
+		background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.parallax-final{
+	background-image: url("../Assets/photo-1511632765486-a01980e01a18.jpg");
+		min-height:1000px;
+	background-attachment: fixed;
+		background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.blocks{
+
+	width:50%;
+	float:left;
+	height:80%;
+	text-align: center;
+	min-width: 400px;
+	font-size: 3vmax;
+	
+	
+	
+	
+	
+}
+.blocks:before {
+	
+	content: "\a0";
+  	display: block;
+  	line-height: 1px;
+  	border-top: 4px inset orangered; 
+}
+.blocks img {
+	float:right;
+	overflow: hidden;
+	max-height:100%; 
+	max-width:100%;
+	border-bottom: 4px inset orangered;
+	
+	
+	
+	
+	
+}
+
+
+.Wblocks{
+	
+	width:50%;
+	float:left;
+	height:121%;
+	text-align: center;
+	font-size: 3vmax;
+	min-width:400px;
+	
+	
+}
+.Wblocks:before{
+	content: "\a0";
+  	display: block;
+  	line-height: 1px;
+  	border-top: 4px inset orangered; 
+	
+	
+}
+
+
+.Wblocks img {
+	float:left;
+	overflow: hidden;
+	max-height:80%; 
+	max-width:80%;
+	border-bottom: 4px inset orangered;
+	min-width:400px;
+}
+@media only screen and (max-width: 600px) {
+	.Wblocks{
+		color:aliceblue;
+		background-color: black;
+		height:300px;
+	
+}
+}	
+@media only screen and (max-width:600px){
+		.blocks{
+		color:aliceblue;
+		background-color: black;
+		height:300px;
+			
+		}
+	}
+	
+.newstockblock{
+	height:500px;
+	font-size: 36px;
+	background-color: aliceblue;
+}
+
+
+
+.gallery:before {
+  content: attr(title);
+  display: block;
+	padding-bottom:15px;
+}
+
+ul {
+  text-align: center;
+  padding: 10px;
+}
+
+.gallery {
+  width: 25%;
+  display: inline-block;
+  vertical-align: bottom;
+	padding-left: 30px;
+	padding-bottom: 30px;
+	min-width:300px;
+	min-height: 30%;
+	
+}
+
+.gallery img {
+  max-width: 100%;
+  height: auto;
+	display:block;
+
+}
+
+
+
+.images{
+	position: relative;
+	display: block;
+	overflow: hidden;
+	top:0;
+	min-height: 20%;
+	min-width: 20%;
+	
+}
+.overlay {
+	
+  	
+	position: absolute;
+  	top: 0;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+	overflow: hidden;
+	
+}
+
+
+
+
+
+.images:hover .overlay {
+  opacity: 0.7;
+	overflow: hidden;
+	max-width: 450px;
+}
+
+.text {
+  color: white;
+  font-size: 2.3rem;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.buybutton {
+	background: none;
+	color: white;
+	border: none;	
+	font-weight: bold;
+	font-size: 2rem;
+	letter-spacing: 2px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+	font-family: MainFont;
+	
+}
+
+.buybutton:hover {
+	background-color: black;
+	border: none;
+	text-decoration: underline orangered;
+	
+}
+
+.desc {
+	color:white;
+	padding-top: 10px;
+}
+
+h1{
+	color:white;
+	text-align: center;
+}
+h2{
+	color:white;
+	text-align: center;
+}
+h3{
+	font-size: 64;
+}
+
+.blocktext{
+	padding-top:50 px;
+	min-width: 300px;
+}
+
+.video{
+	align-items: center;
+	width: auto;
+	height: auto;
+		
+
+}
+
+
+.form-sheet{
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	color: black;
+	overflow: hidden;
+	text-align: left;
+	color: aliceblue;
+	font-size: 20px;
+	padding-top: 20px;
+}
+
+
+
+
+
+
+
+
+.footer-media{
+	display:inline-block;
+	font-display: auto;
+	color:aliceblue;
+	font-size: 15px;
+	text-align: left;
+	float:left;
+	line-height: 1rem;
+	
+}
+.footer-media h2{
+	font-size: 20px;
+}
+.social-facebook{
+	background-position: -33px 0;
+}
+
+.footer-policies{
+
+	text-align: right;
+	display:block;
+	font-display: auto;
+	color:aliceblue;
+}
+.footer-policies p{
+	font-size: 20px;
+	display:inline-block;
+}
+.details {
+	color:aliceblue; 
+	padding-top: 20px;
+	height: auto;
+	text-align: center;
+	width: 50%;
+	padding-left: 20%;
+	position: absolute;
+	display:block;
+		
+}
+.tele-no p{
+	float: left;
+	position: absolute;
+	
+}
+.open-times{
+	float:right;
+	
+}
+
+
+
+#cart-price{
+	color: black;
+	text-align: center;
+}
+
+#cart-items{
+	color: black;
+	text-align: left;
+}
+
+#cartModel{
+	background-color: white;
+	width:30%;
+	height:80%;
+	border: 2px solid orangered;
+	overflow: hidden;
+	min-width: 400px;
+	top:200px;
+	
+	
+}
+.title {
+	font-size: 20px;
+	color: aliceblue;
+	
+}
+.model{
+	
+	
+	align-items: flex-start;
+	position: absolute;		
+	height: 50%;
+	
+	
+	
+}
+.cart{
+	float: right;
+	width:100%;
+	color:black;
+	
+	
+}
+.cart h1{
+	color:black;
+}
+.cart li{
+	text-align: left;
+ 	list-style-type: none;
+	font-size: 20px;
+}
+#mobile-content {
+    display:none;
+	color: aliceblue;
+	position: absolute;
+	min-width: 300px;
+}
+
+@media only screen and (max-width: 600px) {
+  #mobile-content {
+    display: block;
+	 text-align: center;
+	  font-size: 18px;
+	 
+  }
+}
+#mobile-content:hover{
+	text-decoration: underline orangered;
+}
+#clear-cart img{
+	position: absolute;
+	bottom: 0;
+	right:0;
+}
+.cart-price-title{
+	padding-top: 20%;
+}
+#cart-price{
+	font-size: 24px;
+}
+.cart-buy{
+	background: none;
+	color: black;
+	border: none;	
+	font-weight: bold;
+	font-size: 24px;
+	text-align: center;
+	cursor: pointer;
+	margin: 5px;
+	font-family: MainFont;
+	padding-top: 50px;
+}
+
+.cart-buy:hover {
+	text-decoration: underline orangered;
+}
+
+	
+
+#browser-title {
+	display:none;
+	text-align: center;
+}
+
+@media only screen and (min-width:700px){
+	#browser-title {
+		display:inline;
+		color:aliceblue;
+
+		
+	}
+}
+.page-title{
+	padding-top:100px;
+}
+.removeQuantity{
+	background: none;
+	color: black;
+	border: none;	
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	cursor: pointer;
+	font-family: MainFont;
+	
+}
+
+.removeQuantity:hover {
+	text-decoration: underline orangered;
+}
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px;  
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box;
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical; 
+	
+}
+
+
+input[type=submit] {
+  background-color: orangered;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+	font-family: MainFont;
+	font-size: 20px;
+}
+
+
+input[type=submit]:hover {
+  
+	
+	text-decoration: underline black;
+}

@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="CSS/styles.css" />
+<script src="JS/main.js"></script>
+<title>Superydry Shopping Cart</title>
+</head>
+<body>
+	
+	
+	
+	<!--Nav Bar-->	
+<header>
+	<nav>		
+		<div class="main-logo"><a href="index.html"><img src="Assets/superdry-logo.png"></div></a>
+	
+	  <div class="dropdown">
+	  <a href="New Stock.html">New Stock</a>
+		  <a href="mens.html">Mens</a>
+		  
+		  <a href="womens.html">Womens</a>
+		<a href="shopping-cart.html">Shopping Cart</a>	
+		
+			
+		
+		  
+		  <a href="about.html">Contact Us</a>
+		  
+		</div>
+    </nav>
+</header>	
+<!--End of Nav Bar -->	
+<body>
+	
+	<!--Start of Container-->
+	
+	
+	
+	<div class="container">
+		
+		<div class="title"><h1>Cart</h1>
+		</div>
+	
+	<div id="cartModel" class="model" style="display:flex;">
+	
+	<!--Title for the cart-->
+		
+		<div class="cart"> 
+		
+		<h1>Cart</h1>
+		<li id="cart-items">
+		<!--Inside here goes the items the user has selected-->	
+		
+		
+		
+		</li>
+			<div class="cart-price-title">
+			<h1>Cart Price</h1>
+			</div>
+		<div id="cart-price">£0</div>
+			
+			
+			<h1 class="cart-buy" onclick="cartBuy()">Confirm Purchase</h1>
+			<div id="clear-cart">
+		<img src="Assets/clear-cart.png" onclick="deleteCart()">
+		</div>
+		</div>
+		
+		
+		
+		
+		
+	
+	
+	
+		</div>
+		
+		
+		
+		
+	</div>
+	
+</body>
+</html>
